@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.DropTargetBar
+<com.android.launcher7.DropTargetBar
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:theme="@style/HomeScreenElementTheme"
@@ -31,7 +31,7 @@
 
         <!-- Delete target -->
 
-        <com.android.launcher3.DeleteDropTarget
+        <com.android.launcher7.DeleteDropTarget
             launcher:hideParentOnDisable="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -49,7 +49,7 @@
 
         <!-- App Info -->
 
-        <com.android.launcher3.InfoDropTarget
+        <com.android.launcher7.InfoDropTarget
             launcher:hideParentOnDisable="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -67,7 +67,7 @@
 
         <!-- Uninstall target -->
 
-        <com.android.launcher3.UninstallDropTarget
+        <com.android.launcher7.UninstallDropTarget
             launcher:hideParentOnDisable="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -78,4 +78,4 @@
             android:text="@string/uninstall_drop_target_label" />
     </FrameLayout>
 
-</com.android.launcher3.DropTargetBar>
+</com.android.launcher7.DropTargetBar>

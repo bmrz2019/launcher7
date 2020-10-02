@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.allapps.search.AppsSearchContainerLayout
+<com.android.launcher7.allapps.search.AppsSearchContainerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@id/search_container_all_apps"
     android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             == - (search_container.layout_marginBottom)
             >= 5dp
     -->
-    <com.android.launcher3.ExtendedEditText
+    <com.android.launcher7.ExtendedEditText
         android:id="@+id/search_box_input"
         android:layout_width="match_parent"
         android:layout_height="@dimen/all_apps_search_bar_field_height"
@@ -66,4 +66,4 @@
             android:layout_height="1dp"
             android:background="@drawable/all_apps_search_divider"/>
     </FrameLayout>
-</com.android.launcher3.allapps.search.AppsSearchContainerLayout>
+</com.android.launcher7.allapps.search.AppsSearchContainerLayout>

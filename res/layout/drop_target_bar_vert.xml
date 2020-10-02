@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.DropTargetBar
+<com.android.launcher7.DropTargetBar
     android:theme="@style/HomeScreenElementTheme"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/dynamic_grid_drop_target_size"
@@ -26,7 +26,7 @@
     android:paddingTop="@dimen/vert_drop_target_vertical_gap" >
 
     <!-- Delete target -->
-    <com.android.launcher3.DeleteDropTarget
+    <com.android.launcher7.DeleteDropTarget
         android:layout_width="match_parent"
         android:layout_height="@dimen/dynamic_grid_drop_target_size"
         android:gravity="center"
@@ -35,7 +35,7 @@
         android:id="@+id/delete_target_text" />
 
     <!-- Uninstall target -->
-    <com.android.launcher3.UninstallDropTarget
+    <com.android.launcher7.UninstallDropTarget
         android:layout_width="match_parent"
         android:layout_height="@dimen/dynamic_grid_drop_target_size"
         android:gravity="center"
@@ -50,7 +50,7 @@
         android:layout_weight="1" />
 
     <!-- App Info -->
-    <com.android.launcher3.InfoDropTarget
+    <com.android.launcher7.InfoDropTarget
         android:layout_width="match_parent"
         android:layout_height="@dimen/dynamic_grid_drop_target_size"
         android:gravity="center"
@@ -59,4 +59,4 @@
         android:id="@+id/info_target_text"
         android:layout_marginBottom="64dp"/>
 
-</com.android.launcher3.DropTargetBar>
+</com.android.launcher7.DropTargetBar>

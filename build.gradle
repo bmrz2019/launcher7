@@ -32,13 +32,13 @@ android {
 
     productFlavors {
         aosp {
-            applicationId 'com.android.launcher3'
-            testApplicationId 'com.android.launcher3.tests'
+            applicationId 'com.android.launcher7'
+            testApplicationId 'com.android.launcher7.tests'
         }
 
         l3go {
-            applicationId 'com.android.launcher3'
-            testApplicationId 'com.android.launcher3.tests'
+            applicationId 'com.android.launcher7'
+            testApplicationId 'com.android.launcher7.tests'
         }
     }
     sourceSets {
@@ -70,7 +70,7 @@ android {
         l3go {
             res.srcDirs = ['go/res']
             java.srcDirs = ['go/src_flags']
-            // Note: we are using the Launcher3 manifest here because the gradle manifest-merger uses
+            // Note: we are using the Launcher7 manifest here because the gradle manifest-merger uses
             // different attributes than the build system.
             manifest.srcFile "AndroidManifest.xml"
         }
@@ -113,9 +113,9 @@ protobuf {
                 task.builtins {
                     remove java
                     javanano {
-                        option "java_package=launcher_log_extension.proto|com.android.launcher3.userevent.nano"
-                        option "java_package=launcher_log.proto|com.android.launcher3.userevent.nano"
-                        option "java_package=launcher_dump.proto|com.android.launcher3.model.nano"
+                        option "java_package=launcher_log_extension.proto|com.android.launcher7.userevent.nano"
+                        option "java_package=launcher_log.proto|com.android.launcher7.userevent.nano"
+                        option "java_package=launcher_dump.proto|com.android.launcher7.model.nano"
                         option "enum_style=java"
                     }
                 }

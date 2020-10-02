@@ -19,7 +19,7 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.launcher3">
+    package="com.android.launcher7">
     <uses-sdk android:targetSdkVersion="23" android:minSdkVersion="21"/>
 
     <!--
@@ -45,7 +45,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:backupAgent="com.android.launcher3.LauncherBackupAgent"
+        android:backupAgent="com.android.launcher7.LauncherBackupAgent"
         android:fullBackupOnly="true"
         android:fullBackupContent="@xml/backupscheme"
         android:hardwareAccelerated="true"
@@ -57,7 +57,7 @@
 
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
-            android:name="com.android.launcher3.InstallShortcutReceiver"
+            android:name="com.android.launcher7.InstallShortcutReceiver"
             android:permission="com.android.launcher.permission.INSTALL_SHORTCUT"
             android:enabled="@bool/enable_install_shortcut_api" >
             <intent-filter>
@@ -67,32 +67,32 @@
 
         <!-- Intent received when a session is committed -->
         <receiver
-            android:name="com.android.launcher3.SessionCommitReceiver" >
+            android:name="com.android.launcher7.SessionCommitReceiver" >
             <intent-filter>
                 <action android:name="android.content.pm.action.SESSION_COMMITTED" />
             </intent-filter>
         </receiver>
 
         <!-- Intent received used to initialize a restored widget -->
-        <receiver android:name="com.android.launcher3.AppWidgetsRestoredReceiver" >
+        <receiver android:name="com.android.launcher7.AppWidgetsRestoredReceiver" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_HOST_RESTORED"/>
             </intent-filter>
         </receiver>
 
-        <service android:name="com.android.launcher3.dynamicui.ColorExtractionService"
+        <service android:name="com.android.launcher7.dynamicui.ColorExtractionService"
             android:exported="false"
             android:process=":wallpaper_chooser"
             android:permission="android.permission.BIND_JOB_SERVICE">
         </service>
 
         <service
-            android:name="com.android.launcher3.compat.WallpaperManagerCompatVL$ColorExtractionService"
+            android:name="com.android.launcher7.compat.WallpaperManagerCompatVL$ColorExtractionService"
             android:exported="false"
             android:process=":wallpaper_chooser"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <service android:name="com.android.launcher3.notification.NotificationListener"
+        <service android:name="com.android.launcher7.notification.NotificationListener"
                  android:enabled="@bool/notification_badging_enabled"
                  android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
@@ -103,7 +103,7 @@
         <meta-data android:name="android.nfc.disable_beam_default"
                        android:value="true" />
 
-        <activity android:name="com.android.launcher3.dragndrop.AddItemActivity"
+        <activity android:name="com.android.launcher7.dragndrop.AddItemActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"
             android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
@@ -119,8 +119,8 @@
         worspace configuration to the dump's file descriptor by using launcher_dump.proto
         -->
         <meta-data
-            android:name="com.android.launcher3.launcher_dump_provider"
-            android:value="com.android.launcher3.LauncherProvider" />
+            android:name="com.android.launcher7.launcher_dump_provider"
+            android:value="com.android.launcher7.LauncherProvider" />
 
     </application>
 </manifest>
