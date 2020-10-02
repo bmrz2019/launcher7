@@ -44,14 +44,14 @@ abstract class BaseFlags {
     // When enabled uses the AllAppsRadialGradientAndScrimDrawable for all apps
     public static final boolean LAUNCHER3_GRADIENT_ALL_APPS = true;
     // When enabled allows use of physics based motions in the Launcher.
-    public static final boolean LAUNCHER3_PHYSICS = true;
+    public static final boolean LAUNCHER3_PHYSICS = false;
     // When enabled allows use of spring motions on the icons.
-    public static final boolean LAUNCHER3_SPRING_ICONS = true;
+    public static final boolean LAUNCHER3_SPRING_ICONS = false;
 
     // Feature flag to enable moving the QSB on the 0th screen of the workspace.
     public static final boolean QSB_ON_FIRST_SCREEN = false;
     // When enabled the all-apps icon is not added to the hotseat.
-    public static final boolean NO_ALL_APPS_ICON = true;
+    public static final boolean NO_ALL_APPS_ICON = false;
     // When enabled fling down gesture on the first workspace triggers search.
     public static final boolean PULLDOWN_SEARCH = false;
     // When enabled the status bar may show dark icons based on the top of the wallpaper.
